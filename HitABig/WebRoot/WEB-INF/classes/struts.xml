@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts  PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+                         "http://struts.apache.org/dtds/struts-2.3.dtd"
+>
+
+<struts>
+        <constant value="false" name="struts.enable.DynamicMethodInvocation"/>
+        <constant value="false" name="struts.devMode"/>
+          <package name="default" namespace="/" extends="struts-default"><!--需要将json-default改为-->  
+            
+              <action name="addTeamInfo" class="com.hitabig.action.businessAction" method="addTeamInfo">
+                  <result>/rigester.jsp</result>
+              </action>
+              <action name="findAll" class="com.hitabig.action.businessAction" method="findAll">
+                  <result>/MainGrade.jsp</result>
+              </action>
+              <action name="creative" class="com.hitabig.action.businessAction" method="findCreative">
+                  <result>/Creative.jsp</result>
+              </action>
+              <action name="growth" class="com.hitabig.action.businessAction" method="findGrowth">
+                  <result>/Growth.jsp</result>
+              </action>
+              <action name="start" class="com.hitabig.action.businessAction" method="findStart">
+                  <result>/Start.jsp</result>
+              </action>
+              <action name="record" class="com.hitabig.action.businessAction" method="addGrade">
+                  <result>/Record.jsp</result>
+              </action>
+    </package>  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        
+        
+        
+</struts>
